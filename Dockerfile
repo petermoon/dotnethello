@@ -1,9 +1,7 @@
-FROM microsoft/dotnet:1.0.0-core
+FROM microsoft/dotnet:1.0.0-onbuild
 
-ADD . /src
+ADD . /dotnetapp
 
 EXPOSE 80
-
-CMD ["dotnet", "restore"]
-CMD ["dotnet", "build"]
-CMD ["dotnet", "run"]
+RUN cd /dotnetapp
+RUN dotnet restore
