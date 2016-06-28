@@ -10,6 +10,7 @@ namespace aspnetcoreapp
             var host = new WebHostBuilder()
                 .UseKestrel()
                 .UseStartup<Startup>()
+                .UseUrls("http://localhost:80")
                 .Build();
 
             host.Run();
