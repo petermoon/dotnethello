@@ -1,7 +1,3 @@
-FROM microsoft/dotnet:1.0.0-onbuild
-
-ADD . /dotnetapp
+FROM microsoft/dotnet:onbuild
 
 EXPOSE 80
-RUN cd /dotnetapp
-RUN dotnet restore
