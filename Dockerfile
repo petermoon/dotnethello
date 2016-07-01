@@ -1,3 +1,3 @@
 FROM microsoft/dotnet:onbuild
 
-EXPOSE 5000
+EXPOSE 80 443
